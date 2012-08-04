@@ -1,5 +1,5 @@
-sum = 0
-for x in xrange(1,1000):
-	if(x % 5 == 0 or x % 3 == 0):
-		sum += x
-print sum
+total = 0
+for i in xrange(0,1000):
+    if(i%5==0 or i%3==0):
+        total += i
+print total
