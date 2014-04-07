@@ -46,9 +46,10 @@ def numdivisors(n):
             d[i] = 0
         d[i] = d[i] + 1
     prod = 1
-    for key in d.keys():
-        prod = prod * (d[key]+1)
-    return prod
+    return reduce(lambda x,y: (d[y]+1)*x, d.keys(), 1)
+    #for key in d.keys():
+    #    prod = prod * (d[key]+1)
+    #return prod
 
 def properdivisors(n):
     l = list()
